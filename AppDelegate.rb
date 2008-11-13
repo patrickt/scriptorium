@@ -12,11 +12,10 @@ include HotCocoa
 
 class AppDelegate
   
-  attr_accessor :headerOutputArea
+  attr_accessor :text_display_field
   
-  def applicationDidFinishLaunching(aNotification)
-  end
-  
+  # This mixture of camelCase and underscores is confusing me.
+  # I tend to prefer underscores for Ruby.
   def validateToolbarItem(item)
     case item.label
     when "Open App Bundle"
@@ -36,10 +35,12 @@ class AppDelegate
   def generateHeadersForApplication(app)
     @app_name = app.lastPathComponent.sub('.app', '')
     @temporary_directory ||= NSTemporaryDirectory()
+    # Backticks, I love you. At least compared to getting NSPipes and NSTasks to play nice.
     `sdef #{app} | sdp -fh --basename #{@app_name} -o #{@temporary_directory}`
-    @contents = NSString.stringWithContentsOfFile(@temporary_directory + @app_name + '.h', :encoding => NSUTF8StringEncoding, :error => nil)
-    @headerOutputArea.textStorage.attributedString = NSAttributedString.alloc.initWithString(@contents, :attributes => 
-      {NSFontAttributeName => NSFont.fontWithName("Courier New", :size => 12)})
+    header_file_name = @temporary_directory + @app_name + '.h'
+    @contents = NSString.stringWithContentsOfFile(header_file_name, :encoding => NSUTF8StringEncoding, :error => nil)
+    @text_display_field.textStorage.attributedString = 
+      NSAttributedString.alloc.initWithString(@contents, :attributes => {NSFontAttributeName => NSFont.fontWithName("Courier New", :size => 12)})
   end
   
   def saveHeaderFiles(sender)
@@ -47,7 +48,7 @@ class AppDelegate
     panel.message = "Please choose a location to hold the header file."
     panel.canCreateDirectories = true
     panel.title = "Save .h file"
-    panel.runModalForDirectory(nil, :file => @app_name)
-    @contents.writeToFile panel.filename, :atomically => true, :encoding => NSUTF8StringEncoding, :error => nil
+    panel.runModalForDirectory(nil, :file => @app_name + '.h')
+    @contents.writeToFile(panel.filename, :atomically => true, :encoding => NSUTF8StringEncoding, :error => nil);
   end
 end

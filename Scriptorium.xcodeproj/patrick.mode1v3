@@ -329,10 +329,10 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>CD67B8A40ECB5BF700A4D1A8</string>
+										<string>CD322BC40ECC94F500813743</string>
 										<key>history</key>
 										<array>
-											<string>CDC855D50ECA8A59002B0582</string>
+											<string>CD67B8A40ECB5BF700A4D1A8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -390,9 +390,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>CD67B8830ECB564F00A4D1A8</string>
+				<string>CD322BC50ECC94F500813743</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>CD67B8840ECB564F00A4D1A8</string>
+				<string>CD322BC60ECC94F500813743</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -526,10 +526,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>CD4F6C240EC9F60200BB17EA</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>/Users/patrick/Experiments/MacRuby/Scriptorium/Scriptorium.xcodeproj</string>
+		<string>/Users/patrick/Repositories/Scriptorium/Scriptorium.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>160 243 888 635 0 0 1440 878 </string>
@@ -609,7 +609,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>CD4F6C240EC9F60200BB17EA</string>
-				<string>CD67B88C0ECB589E00A4D1A8</string>
+				<string>CD322BC70ECC94F500813743</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -651,8 +651,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {316, 198}}</string>
-											<string>{{316, 0}, {378, 198}}</string>
+											<string>{{0, 0}, {316, 201}}</string>
+											<string>{{316, 0}, {378, 201}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -667,8 +667,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {694, 198}}</string>
-											<string>{{0, 198}, {694, 183}}</string>
+											<string>{{0, 0}, {694, 201}}</string>
+											<string>{{0, 201}, {694, 180}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -701,7 +701,7 @@
 										<real>148</real>
 									</array>
 									<key>Frame</key>
-									<string>{{316, 0}, {378, 198}}</string>
+									<string>{{316, 0}, {378, 201}}</string>
 									<key>RubberWindowFrame</key>
 									<string>312 353 694 422 0 0 1440 878 </string>
 								</dict>
@@ -729,13 +729,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>CD67B88D0ECB589E00A4D1A8</string>
+				<string>CD322BC80ECC94F500813743</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>CD67B88E0ECB589E00A4D1A8</string>
-				<string>CD67B88F0ECB589E00A4D1A8</string>
-				<string>CD67B8900ECB589E00A4D1A8</string>
-				<string>CD67B8910ECB589E00A4D1A8</string>
-				<string>CD67B8920ECB589E00A4D1A8</string>
+				<string>CD322BC90ECC94F500813743</string>
+				<string>CD322BCA0ECC94F500813743</string>
+				<string>CD322BCB0ECC94F500813743</string>
+				<string>CD322BCC0ECC94F500813743</string>
+				<string>CD322BCD0ECC94F500813743</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -862,8 +862,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -899,7 +897,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>CD67B8930ECB589E00A4D1A8</string>
+				<string>CD322BCE0ECC94F500813743</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -909,7 +907,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
